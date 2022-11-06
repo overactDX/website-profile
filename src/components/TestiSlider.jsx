@@ -35,7 +35,7 @@ const TestiSlider = () => {
           return (
             <SwiperSlide key={index}>
               <div
-                className='flex flex-col lg:flex-row gap-12 lg:gap-32 '
+                className='flex flex-col lg:flex-row gap-12 lg:gap-10 '
               >
                 <div
                   className='w-48 h-48 lg:w-[328px] lg:h-[328px]'

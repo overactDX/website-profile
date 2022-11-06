@@ -39,9 +39,9 @@ import {
 
   
   // testimonial images
-  import TestiImage1 from './assets/img/testimonials/testimonial-1.webp';
-  import TestiImage2 from './assets/img/testimonials/testimonial-2.webp';
-  import TestiImage3 from './assets/img/testimonials/testimonial-3.webp';
+  import TestiImage1 from './assets/img/testimonials/ICT.png';
+  import TestiImage3 from './assets/img/testimonials/lffintecth.jpg';
+  import TestiImage2 from './assets/img/testimonials/ONEDEE.png';
   
   // navigation
   export const navigation = [
@@ -62,7 +62,7 @@ import {
     //   href: 'services',
     // },
     {
-      name: 'testimonials',
+      name: 'study',
       href: 'testimonials',
     },
     {

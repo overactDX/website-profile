@@ -3,7 +3,7 @@ import React from 'react'
 import Img from '../assets/img/about.jpg'
 const About = () => {
     return (
-        <section className='section bg-secondary'>
+        <section className='section bg-secondary' id='about'>
             <div className='container mx-auto'>
                 <div className='flex flex-col xl:flex-row gap-24'>
                     <img src={Img} className='object-cover h-full w-[566px] md:mx-auto lg:mx-0 rounded-2xl' alt="" />

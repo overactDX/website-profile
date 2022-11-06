@@ -15,10 +15,10 @@ const App = () => {
     <div >
       <Header />
       <Hero />
-      <Brands />
+      {/* <Brands /> */}
       <About />
       <Skill />
-      <Portfolio />
+      {/* <Portfolio /> */}
       <Testimonials />
       <Contact />
       {/* <div style={{height: '2000px'}}></div> */}
