@@ -20,12 +20,12 @@ import {
   import DribbbleBrandIcon from './assets/img/brands/dribbble.png';
   
   // projects images
-  import Project1 from './assets/img/projects/Project-1.jpg';
-  import Project2 from './assets/img/projects/Project-2.png';
-  import Project3 from './assets/img/projects/Project-1.jpg';
-  import Project4 from './assets/img/projects/Project-1.jpg';
-  import Project5 from './assets/img/projects/Project-3.png';
-  import Project6 from './assets/img/projects/Project-1.jpg';
+  import Project1 from './assets/img/projects/cheevamitr.jpg';
+  import Project2 from './assets/img/projects/lffintecth.png';
+  import Project3 from './assets/img/projects/pimporn.png';
+  import Project4 from './assets/img/projects/madooban.png';
+  import Project5 from './assets/img/projects/madooban.png';
+  import Project6 from './assets/img/projects/madooban.png';
   
   // skills images
   import SkillImg1 from './assets/img/skills/html5.png';
@@ -158,7 +158,7 @@ import {
     // projectsDetails
     export const projectsDetails = [
       {
-        description: 'asdas'
+        description: ''
       },
       {
         description: ''
@@ -258,7 +258,8 @@ import {
         'University of Phayao',
       authorName: 'All Project',
       authorPosition: 'vuejs',
-      img:Project2
+      img1:Project2,
+      img2:Project1,
     },
     {
       authorImg: TestiImage2,
@@ -266,15 +267,19 @@ import {
         'OneDee Solution Co., Ltd.',
       authorName: 'All Project',
       authorPosition: 'reactjs',
-      img:Project2
+      img1:Project4,
+      img2:Project4,
     },
     {
       authorImg: TestiImage3,
       authorText:
         'LFFFINTECT',
-      authorName: 'Olivia Doe',
+      authorName: 'All Project',
       authorPosition: 'reactjs',
-      img:Project1
+      img1:Project1,
+      img2:Project2,
+      img3:Project3,
+      fv:'Vue JS / Tailwind CSS'
     },
   ];
   
@@ -293,16 +298,3 @@ import {
       description: 'Chiang mai, Thailand',
     },
   ];
-
-
-    // Project
-    export const project = [
-      {
-        title: 'Have a question?',
-        description: 'overact150@gmail.com',
-      },
-      {
-        title: 'Current Location',
-        description: 'Chiang mai, Thailand',
-      },
-    ];

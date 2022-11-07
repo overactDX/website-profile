@@ -32,7 +32,7 @@ const TestiSlider = ({ item }) => {
         className='mySwiper'
       >
         {testimonials.map((item, index) => {
-          const { authorImg, authorText, authorName, authorPosition, img } = item;
+          const { authorImg, authorText, authorName, authorPosition, img1, img2, img3, fv } = item;
           return (
             <SwiperSlide key={index}>
               <div
@@ -50,10 +50,21 @@ const TestiSlider = ({ item }) => {
                     {authorText}
                   </h5>
                   <p className='text-lg text-accent'>{authorName}</p>
-                  <div className='grid gap-y-12 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-8 mt-5'>
-                    <img src={img} alt="" />
+                  <div className='grid gap-y-12 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-8 mt-5 text-center'>
+                    <div >
+                      <img src={img1} alt="" />
+                      <p className='text-lg text-accent'>{fv}</p>
+                    </div>
+                    <div>
+                      <img src={img2} alt="" />
+                      <p className='text-lg text-accent'>{fv}</p>
+                    </div>
+                    <div>
+                      <img src={img3} alt="" />
+                      <p className='text-lg text-accent'>{fv}</p>
+
+                    </div>
                   </div>
-                  <p className='text-lg text-accent'>{authorPosition}</p>
                 </div>
               </div>
             </SwiperSlide>
