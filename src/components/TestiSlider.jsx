@@ -2,7 +2,8 @@ import React from 'react';
 
 // testimonials data
 import { testimonials } from '../data';
-
+import { projectsData } from '../data';
+import data from '../data'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -14,24 +15,24 @@ import '../swiper.css';
 // import required modules
 import { Autoplay, Pagination } from 'swiper';
 
-
-const TestiSlider = () => {
+console.log(projectsData);
+const TestiSlider = ({ item }) => {
 
   return (
-    <>
+    <div>
       <Swiper
         pagination={{
           clickable: true,
         }}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // }}
         modules={[Autoplay, Pagination]}
         className='mySwiper'
       >
         {testimonials.map((item, index) => {
-          const { authorImg, authorText, authorName, authorPosition } = item;
+          const { authorImg, authorText, authorName, authorPosition, img } = item;
           return (
             <SwiperSlide key={index}>
               <div
@@ -48,17 +49,18 @@ const TestiSlider = () => {
                   <h5 className='font-body text-2xl mb-8 italic font-normal'>
                     {authorText}
                   </h5>
-                  <div>
-                    <p className='text-lg text-accent'>{authorName}</p>
-                    <p>{authorPosition}</p>
+                  <p className='text-lg text-accent'>{authorName}</p>
+                  <div className='grid gap-y-12 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-8 mt-5'>
+                    <img src={img} alt="" />
                   </div>
+                  <p className='text-lg text-accent'>{authorPosition}</p>
                 </div>
               </div>
             </SwiperSlide>
           );
         })}
       </Swiper>
-    </>
+    </div>
   );
 };
 

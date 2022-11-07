@@ -255,23 +255,26 @@ import {
     {
       authorImg: TestiImage1,
       authorText:
-        'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
-      authorName: 'Olivia Doe',
-      authorPosition: 'Head of Design, Google',
+        'University of Phayao',
+      authorName: 'All Project',
+      authorPosition: 'vuejs',
+      img:Project2
     },
     {
       authorImg: TestiImage2,
       authorText:
-        'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
-      authorName: 'Olivia Doe',
-      authorPosition: 'Head of Design, Google',
+        'OneDee Solution Co., Ltd.',
+      authorName: 'All Project',
+      authorPosition: 'reactjs',
+      img:Project2
     },
     {
       authorImg: TestiImage3,
       authorText:
-        'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
+        'LFFFINTECT',
       authorName: 'Olivia Doe',
-      authorPosition: 'Head of Design, Google',
+      authorPosition: 'reactjs',
+      img:Project1
     },
   ];
   

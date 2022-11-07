@@ -10,11 +10,11 @@ const Testimonials = () => {
       <div className='container mx-auto'>
         <div className='flex flex-col items-center text-center'>
           <h2 className='section-title before:content-testimonials relative before:absolute before:opacity-40 before:-top-[2rem] before:-left-64 before:hidden before:lg:block'>
-            What other people say
+            <img src="https://fontmeme.com/permalink/221107/53270c64f6a79f812b7b4ac478a4b07a.png" alt="outline-fonts" border="0" />
           </h2>
           <p className='subtitle'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veniam
-            labore nisium illum cupiditate reiciendis a numquam
+            {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veniam
+            labore nisium illum cupiditate reiciendis a numquam */}
           </p>
         </div>
         <TestiSlider />
@@ -24,3 +24,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+

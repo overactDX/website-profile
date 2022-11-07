@@ -41,6 +41,7 @@
   .active {
     @apply text-accent;
   }
+  
   ::-webkit-scrollbar {
     width: 8px;
   }
