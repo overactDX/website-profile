@@ -21,7 +21,7 @@ const App = () => {
       {/* <Portfolio /> */}
       <Testimonials />
       <Contact />
-      {/* <div style={{height: '2000px'}}></div> */}
+      {/* <Contacts /> */}
     </div>
   )
 }

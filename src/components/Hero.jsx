@@ -8,7 +8,7 @@ const Hero = () => {
             id='home'
             className='lg:h-[85vh] flex items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden'>
             <div className='container mx-auto h-full'>
-                <div className="flex items-center h-full pt-28">
+                <div className="flex items-center h-full">
                     <div className="flex flex-1 flex-col items-center lg:items-start">
                         <p className='text-2xl text-slate-300 mb-[22px]'>Hello ,My name Is Jame.</p>
                         <h1 className='text-5xl leading-10 md:text-5xl md:leading-tight lg:text-5xl lg:leading-[1.2] font-bold md:tracking-[-2px]'>VEERAYUTT PAKPUME.</h1>

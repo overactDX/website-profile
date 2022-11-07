@@ -1,10 +1,23 @@
-import React from 'react';
-
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 // import contact data
 import { contact } from '../data';
 
-
 const Contact = () => {
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_2mvc1ss', 'template_r4gqzph', form.current, 'e5r7UtmsjNqkIAwv7')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+    e.target.reset()
+  };
+
   return (
     <section className='section bg-primary' id='contact'>
       <div className='container mx-auto'>
@@ -39,21 +52,12 @@ const Contact = () => {
               );
             })}
           </div>
-          <form
-            className='space-y-8 w-full max-w-[780px]'
-          >
-            <div className='flex gap-8'>
-              <input className='input' type='text' placeholder='Your name' />
-              <input className='input' type='email' placeholder='Your email' />
-            </div>
-            <input className='input' type='text' placeholder='Subject' />
-            <textarea
-              className='textarea'
-              placeholder='Your message'
-            ></textarea>
-            <button className='btn btn-lg bg-accent hover:bg-secondary-hover'>
-              Send message
-            </button>
+          <form ref={form} onSubmit={sendEmail} action="" className='space-y-8 w-full max-w-[780px]'>
+            <input type="text" name="user_name" placeholder='Name' required className='input' />
+            <input type="text" name="user_email" placeholder='Email' required className='input' />
+            <input type="text" name="user_name" placeholder='Subject' required className='input' />
+            <textarea name="message" placeholder='Message' className='textarea' />
+            <button className='btn btn-lg bg-accent hover:bg-secondary-hover'>Submit</button>
           </form>
         </div>
       </div>

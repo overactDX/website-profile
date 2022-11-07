@@ -39,7 +39,7 @@ import {
 
   
   // testimonial images
-  import TestiImage1 from './assets/img/testimonials/ICT.png';
+  import TestiImage1 from './assets/img/testimonials/UPict.png';
   import TestiImage3 from './assets/img/testimonials/lffintecth.jpg';
   import TestiImage2 from './assets/img/testimonials/ONEDEE.png';
   
