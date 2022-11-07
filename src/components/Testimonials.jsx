@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import { project } from '../data';
 // import components
 import TestiSlider from './TestiSlider';
 

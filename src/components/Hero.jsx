@@ -1,6 +1,6 @@
 import React from 'react'
 
-import WomanImg from '../assets/img/pic-main-transformed.webp'
+import WomanImg from '../assets/img/img.svg'
 
 const Hero = () => {
     return (

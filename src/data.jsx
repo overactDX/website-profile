@@ -53,16 +53,16 @@ import {
       name: 'about',
       href: 'about',
     },
-    {
-      name: 'portfolio',
-      href: 'portfolio',
-    },
+    // {
+    //   name: 'portfolio',
+    //   href: 'portfolio',
+    // },
     // {
     //   name: 'services',
     //   href: 'services',
     // },
     {
-      name: 'study',
+      name: 'Project',
       href: 'testimonials',
     },
     {
@@ -290,3 +290,16 @@ import {
       description: 'Chiang mai, Thailand',
     },
   ];
+
+
+    // Project
+    export const project = [
+      {
+        title: 'Have a question?',
+        description: 'overact150@gmail.com',
+      },
+      {
+        title: 'Current Location',
+        description: 'Chiang mai, Thailand',
+      },
+    ];
