@@ -1,6 +1,5 @@
 import React from 'react'
 import About from './components/About'
-import Brands from './components/Brands'
 import Contact from './components/Contact'
 import Header from './components/Header'
 import Hero from './components/Hero'
@@ -15,7 +14,6 @@ const App = () => {
     <div >
       <Header />
       <Hero />
-      {/* <Brands /> */}
       <About />
       <Skill />
       {/* <Portfolio /> */}

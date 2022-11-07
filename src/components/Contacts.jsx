@@ -5,8 +5,7 @@ const Contacts = () => {
     const form = useRef()
 
     const sendEmail = (e) => {
-        e.preventDefault();
-
+        e.preventDefault()
         emailjs.sendForm('service_2mvc1ss', 'template_r4gqzph', form.current, 'e5r7UtmsjNqkIAwv7')
             .then((result) => {
                 console.log(result.text);

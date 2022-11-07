@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, useState, useEffect } from 'react';
 
 // testimonials data
 import { testimonials } from '../data';
@@ -17,6 +17,8 @@ import { Autoplay, Pagination } from 'swiper';
 
 console.log(projectsData);
 const TestiSlider = ({ item }) => {
+  const [textName, setTextName] = useState('');
+
 
   return (
     <div>
@@ -32,7 +34,7 @@ const TestiSlider = ({ item }) => {
         className='mySwiper'
       >
         {testimonials.map((item, index) => {
-          const { authorImg, authorText, authorName, authorPosition, img1, img2, img3, fv } = item;
+          const { authorImg, authorText, authorName, authorPosition, img1, img2, img3,nx, fv, ps, rc,fp } = item;
           return (
             <SwiperSlide key={index}>
               <div
@@ -51,19 +53,42 @@ const TestiSlider = ({ item }) => {
                   </h5>
                   <p className='text-lg text-accent'>{authorName}</p>
                   <div className='grid gap-y-12 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-8 mt-5 text-center'>
-                    <div >
-                      <img src={img1} alt="" />
-                      <p className='text-lg text-accent'>{fv}</p>
-                    </div>
-                    <div>
-                      <img src={img2} alt="" />
-                      <p className='text-lg text-accent'>{fv}</p>
-                    </div>
-                    <div>
-                      <img src={img3} alt="" />
-                      <p className='text-lg text-accent'>{fv}</p>
-
-                    </div>
+                    {img1 ? (
+                      <div>
+                        <img src={img1} alt="" className='ph'/>
+                        {authorText === 'University of Phayao' ? <p className='text-lg text-accent'>{authorPosition}</p>
+                          : authorText === 'OneDee Solution Co., Ltd.' ? <p className='text-lg text-accent'>{nx}</p>
+                            : <p className='text-lg text-accent'>{fv}</p>
+                        }
+                      </div>
+                    ) : (
+                      <div>
+                      </div>
+                    )}
+                    {img2 ? (
+                      <div>
+                        <img src={img2} alt="" className='ph'/>
+                        {authorText === 'University of Phayao' ? <p className='text-lg text-accent'>{authorPosition}</p>
+                          : authorText === 'OneDee Solution Co., Ltd.' ? <p className='text-lg text-accent'>{nx}</p>
+                            : <p className='text-lg text-accent'>{rc}</p>
+                        }
+                      </div>
+                    ) : (
+                      <div>
+                      </div>
+                    )}
+                    {img3 ? (
+                      <div>
+                        <img src={img3} alt="" className='ph' />
+                        {authorText === 'University of Phayao' ? <p className='text-lg text-accent'>A</p>
+                          : authorText === 'OneDee Solution Co., Ltd.' ? <p className='text-lg text-accent'>B</p>
+                            : <p className='text-lg text-accent'>{fp}</p>
+                        }
+                      </div>
+                    ) : (
+                      <div>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>

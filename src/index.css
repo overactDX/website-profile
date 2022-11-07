@@ -50,4 +50,9 @@
   ::-webkit-scrollbar-thumb {
     background-color: rgba(34, 25, 34, 0.8);
   }
+
+  .ph {
+    width: auto;
+    height: 130px;
+  }
 }

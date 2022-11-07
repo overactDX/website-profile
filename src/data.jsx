@@ -24,7 +24,7 @@ import {
   import Project2 from './assets/img/projects/lffintecth.png';
   import Project3 from './assets/img/projects/pimporn.png';
   import Project4 from './assets/img/projects/madooban.png';
-  import Project5 from './assets/img/projects/madooban.png';
+  import Project5 from './assets/img/projects/LandingOnedee.png';
   import Project6 from './assets/img/projects/madooban.png';
   
   // skills images
@@ -256,7 +256,7 @@ import {
       authorImg: TestiImage1,
       authorText:
         'University of Phayao',
-      authorName: 'All Project',
+      authorName: 'All Project / Finish studying Project',
       authorPosition: 'vuejs',
       img1:Project2,
       img2:Project1,
@@ -265,24 +265,68 @@ import {
       authorImg: TestiImage2,
       authorText:
         'OneDee Solution Co., Ltd.',
-      authorName: 'All Project',
-      authorPosition: 'reactjs',
+      authorName: 'All Project / Front-end Developer (Internship)',
+      authorPosition: 'reactjs',  
+      nx:'Nuxt JS / Tailwind CSS',
       img1:Project4,
-      img2:Project4,
+      img2:Project5,
     },
     {
       authorImg: TestiImage3,
       authorText:
         'LFFFINTECT',
-      authorName: 'All Project',
+      authorName: 'All Project / Front-end Developer (Internship)',
       authorPosition: 'reactjs',
       img1:Project1,
       img2:Project2,
       img3:Project3,
-      fv:'Vue JS / Tailwind CSS'
+      fv:'Vue JS / Tailwind CSS',
+      fp:'Vue JS / SCSS',
+      rc:'Nuxt JS / Tailwind CSS '
     },
   ];
-  
+  //skills
+  // export const testimonials = {
+  //   vue: 'Vue JS / Tailwind CSS',
+  //   react: 'React JS'
+  // }
+
+  // //training
+  // export const training = [
+  //   UP = {
+  //     authorImg: TestiImage1,
+  //     name: 'University of Phayao',
+  //     authorName: 'All Project',
+  //     authorPosition: skills.vue,
+  //     img: {
+  //       1: Project2,
+  //       2: Project1
+  //     }
+  //   },
+
+  //   OD = {
+  //     authorImg: TestiImage2,
+  //     name: 'OneDee Solution Co., Ltd.',
+  //     authorName: 'All Project',
+  //     authorPosition: skills.react,
+  //     img: {
+  //       1:Project4,
+  //       2:Project5,
+  //     }
+  //   },
+
+  //   LF = {
+  //     authorImg: TestiImage3,
+  //     name: 'LFFFINTECT',
+  //     authorName: 'All Project',
+  //     authorPosition: skills.react,
+  //     img: {
+  //       1:Project1,
+  //       2:Project2,
+  //       3:Project3,
+  //     }
+  //   }
+  // ]
   // contact
   export const contact = [
     {
