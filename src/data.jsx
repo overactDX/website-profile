@@ -17,7 +17,7 @@ import {
   import Project5 from './assets/img/projects/LandingOnedee.png';
   import Project6 from './assets/img/projects/madooban.png';
   import Project8 from './assets/img/projects/Libary-web-app.jpg';
-  import Project7 from './assets/img/projects/movie-app.jpeg';
+  import Project7 from './assets/img/projects/movie-app.png';
   
   // skills images
   import SkillImg1 from './assets/img/skills/html5.png';
