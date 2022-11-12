@@ -15,7 +15,6 @@ import '../swiper.css';
 // import required modules
 import { Autoplay, Pagination } from 'swiper';
 
-console.log(projectsData);
 const TestiSlider = ({ item }) => {
   const [textName, setTextName] = useState('');
 
