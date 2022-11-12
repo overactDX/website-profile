@@ -166,7 +166,7 @@ import {
       authorName: 'All Project / Front-end Developer (Internship)',
       authorPosition: 'reactjs',  
       nx:'Madooban / Nuxt js',
-      ns:'Landing page / Nuxt js',
+      ns:'Landing page / React js',
       img1:Project4,
       img2:Project5,
     },
