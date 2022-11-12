@@ -20,8 +20,7 @@ const Hero = () => {
                                 Work with me
                             </button>
                             <button className="btn btn-md bg-accent hover:bg-accent-hover md:btn-lg transition-all">
-                                Download CV
-                                
+                                <a href="/Resume.pdf" target="_blank"> Download Resume</a>
                             </button>
                         </div>
 
