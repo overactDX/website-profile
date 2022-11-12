@@ -26,6 +26,8 @@ import {
   import Project4 from './assets/img/projects/madooban.png';
   import Project5 from './assets/img/projects/LandingOnedee.png';
   import Project6 from './assets/img/projects/madooban.png';
+  import Project8 from './assets/img/projects/Libary-web-app.jpg';
+  import Project7 from './assets/img/projects/movie-app.jpeg';
   
   // skills images
   import SkillImg1 from './assets/img/skills/html5.png';
@@ -257,9 +259,10 @@ import {
       authorText:
         'University of Phayao',
       authorName: 'All Project / Finish studying Project',
-      authorPosition: 'vuejs',
-      img1:Project2,
-      img2:Project1,
+      ap: 'Flutter application',
+      as: 'Library Management ',
+      img1:Project7,
+      img2:Project8,
     },
     {
       authorImg: TestiImage2,
@@ -267,7 +270,8 @@ import {
         'OneDee Solution Co., Ltd.',
       authorName: 'All Project / Front-end Developer (Internship)',
       authorPosition: 'reactjs',  
-      nx:'Nuxt JS / Tailwind CSS',
+      nx:'Madooban / Nuxt js',
+      ns:'Landing page / Nuxt js',
       img1:Project4,
       img2:Project5,
     },
@@ -280,9 +284,9 @@ import {
       img1:Project1,
       img2:Project2,
       img3:Project3,
-      fv:'Vue JS / Tailwind CSS',
-      fp:'Vue JS / SCSS',
-      rc:'Nuxt JS / Tailwind CSS '
+      fv:'Cheevamitr / VueJS',
+      fp:'Pimporn Banana / Vue JS ',
+      rc:'LFFINTECTH / Nuxt JS'
     },
   ];
   //skills

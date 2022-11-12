@@ -1,19 +1,22 @@
-import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import React, { useRef, useState } from 'react'
 // import contact data
 import { contact } from '../data';
 
 const Contact = () => {
   const form = useRef()
-
+  const [loading, setLoading] = useState(false)
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setLoading(!loading)
     emailjs.sendForm('service_2mvc1ss', 'template_r4gqzph', form.current, 'e5r7UtmsjNqkIAwv7')
       .then((result) => {
         console.log(result.text);
+        setLoading(false)
+        alert(`THIS EMAIL ${result.text}`);
       }, (error) => {
         console.log(error.text);
+        setLoading(false)
       });
     e.target.reset()
   };
@@ -57,7 +60,7 @@ const Contact = () => {
             <input type="text" name="user_email" placeholder='Email' required className='input' />
             <input type="text" name="user_name" placeholder='Subject' required className='input' />
             <textarea name="message" placeholder='Message' className='textarea' />
-            <button className='btn btn-lg bg-accent hover:bg-secondary-hover'>Submit</button>
+            <button className='btn btn-lg bg-accent hover:bg-secondary-hover'>Submit {loading && <img src="/ww.gif" alt="load" style={{height:20}} className='ml-3 animate-spin' />}</button>
           </form>
         </div>
       </div>

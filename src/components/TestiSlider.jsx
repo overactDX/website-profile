@@ -34,7 +34,7 @@ const TestiSlider = ({ item }) => {
         className='mySwiper'
       >
         {testimonials.map((item, index) => {
-          const { authorImg, authorText, authorName, authorPosition, img1, img2, img3,nx, fv, ps, rc,fp } = item;
+          const { authorImg, authorText, authorName, ap,as, img1, img2, img3,nx, fv, ns, rc,fp } = item;
           return (
             <SwiperSlide key={index}>
               <div
@@ -56,7 +56,7 @@ const TestiSlider = ({ item }) => {
                     {img1 ? (
                       <div>
                         <img src={img1} alt="" className='ph'/>
-                        {authorText === 'University of Phayao' ? <p className='text-lg text-accent'>{authorPosition}</p>
+                        {authorText === 'University of Phayao' ? <p className='text-lg text-accent'>{ap}</p>
                           : authorText === 'OneDee Solution Co., Ltd.' ? <p className='text-lg text-accent'>{nx}</p>
                             : <p className='text-lg text-accent'>{fv}</p>
                         }
@@ -68,8 +68,8 @@ const TestiSlider = ({ item }) => {
                     {img2 ? (
                       <div>
                         <img src={img2} alt="" className='ph'/>
-                        {authorText === 'University of Phayao' ? <p className='text-lg text-accent'>{authorPosition}</p>
-                          : authorText === 'OneDee Solution Co., Ltd.' ? <p className='text-lg text-accent'>{nx}</p>
+                        {authorText === 'University of Phayao' ? <p className='text-lg text-accent'>{as}</p>
+                          : authorText === 'OneDee Solution Co., Ltd.' ? <p className='text-lg text-accent'>{ns}</p>
                             : <p className='text-lg text-accent'>{rc}</p>
                         }
                       </div>

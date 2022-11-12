@@ -21,6 +21,7 @@ const Hero = () => {
                             </button>
                             <button className="btn btn-md bg-accent hover:bg-accent-hover md:btn-lg transition-all">
                                 Download CV
+                                
                             </button>
                         </div>
 
