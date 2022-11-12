@@ -26,10 +26,10 @@ const TestiSlider = ({ item }) => {
         pagination={{
           clickable: true,
         }}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         modules={[Autoplay, Pagination]}
         className='mySwiper'
       >
