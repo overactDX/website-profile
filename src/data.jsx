@@ -4,20 +4,10 @@ import {
     FiInstagram,
     FiGithub,
     FiDribbble,
-    FiLayout,
-    FiSettings,
-    FiPenTool,
-    FiTag,
     FiMail,
     FiMapPin,
   } from 'react-icons/fi';
   
-  // companies icons
-  import FreelancerBrandIcon from './assets/img/brands/freelancer.png';
-  import UpworkBrandIcon from './assets/img/brands/upwork.png';
-  import FiverBrandIcon from './assets/img/brands/fiverr.png';
-  import BehanceBrandIcon from './assets/img/brands/behance.png';
-  import DribbbleBrandIcon from './assets/img/brands/dribbble.png';
   
   // projects images
   import Project1 from './assets/img/projects/cheevamitr.jpg';
@@ -55,14 +45,6 @@ import {
       name: 'about',
       href: 'about',
     },
-    // {
-    //   name: 'portfolio',
-    //   href: 'portfolio',
-    // },
-    // {
-    //   name: 'services',
-    //   href: 'services',
-    // },
     {
       name: 'Project',
       href: 'testimonials',
@@ -93,29 +75,6 @@ import {
     },
   ];
   
-  // companies
-  export const brands = [
-    {
-      img: FreelancerBrandIcon,
-      href: '',
-    },
-    {
-      img: UpworkBrandIcon,
-      href: '',
-    },
-    {
-      img: FiverBrandIcon,
-      href: '',
-    },
-    {
-      img: BehanceBrandIcon,
-      href: '',
-    },
-    {
-      img: DribbbleBrandIcon,
-      href: '',
-    },
-  ];
   
   // projects
   export const projectsData = [
@@ -156,44 +115,7 @@ import {
       category: 'web development',
     },
   ];
-
-    // projectsDetails
-    export const projectsDetails = [
-      {
-        description: ''
-      },
-      {
-        description: ''
-      },
-      {
-        description: ''
-      },
-      {
-        description: ''
-      },
-      {
-        description: ''
-      },
-      {
-        description: ''
-      },
-    ];
   
-  // projects
-  export const projectsNav = [
-    {
-      name: 'all',
-    },
-    {
-      name: 'UI/UX Design',
-    },
-    {
-      name: 'web development',
-    },
-    {
-      name: 'branding',
-    },
-  ];
   
   // skill
   export const skills = [
@@ -223,34 +145,7 @@ import {
     },
 
   ];
-  
-  // services
-  export const services = [
-    {
-      icon: <FiLayout />,
-      name: 'Web Design',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
-    },
-    {
-      icon: <FiSettings />,
-      name: 'Web Development',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
-    },
-    {
-      icon: <FiPenTool />,
-      name: 'Branding',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
-    },
-    {
-      icon: <FiTag />,
-      name: 'SEO',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
-    },
-  ];
+
   
   // testimonials
   export const testimonials = [
@@ -289,60 +184,17 @@ import {
       rc:'LFFINTECTH / Nuxt JS'
     },
   ];
-  //skills
-  // export const testimonials = {
-  //   vue: 'Vue JS / Tailwind CSS',
-  //   react: 'React JS'
-  // }
 
-  // //training
-  // export const training = [
-  //   UP = {
-  //     authorImg: TestiImage1,
-  //     name: 'University of Phayao',
-  //     authorName: 'All Project',
-  //     authorPosition: skills.vue,
-  //     img: {
-  //       1: Project2,
-  //       2: Project1
-  //     }
-  //   },
-
-  //   OD = {
-  //     authorImg: TestiImage2,
-  //     name: 'OneDee Solution Co., Ltd.',
-  //     authorName: 'All Project',
-  //     authorPosition: skills.react,
-  //     img: {
-  //       1:Project4,
-  //       2:Project5,
-  //     }
-  //   },
-
-  //   LF = {
-  //     authorImg: TestiImage3,
-  //     name: 'LFFFINTECT',
-  //     authorName: 'All Project',
-  //     authorPosition: skills.react,
-  //     img: {
-  //       1:Project1,
-  //       2:Project2,
-  //       3:Project3,
-  //     }
-  //   }
-  // ]
   // contact
   export const contact = [
     {
       icon: <FiMail />,
       title: 'Have a question?',
-      // subtitle: 'I am here to help you.',
       description: 'overact150@gmail.com',
     },
     {
       icon: <FiMapPin />,
       title: 'Current Location',
-      // subtitle: '--',
       description: 'Chiang mai, Thailand',
     },
   ];
